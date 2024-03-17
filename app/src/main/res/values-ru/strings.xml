@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Kurs</string>
+    <string name="EditTextTaskName">Наименование задачи</string>
+    <string name="EditTextDescriptionTasks">Описание задачи</string>
+    <string name="EditTextTaskStartDate">Дата начала</string>
+    <string name="EditTextTaskEndDate">Дата окончания</string>
+    <string name="EditTextReminderDate">Дата напоминания</string>
+    <string name="CheckBoxMissionAccomplished">Выполнена</string>
+    <string name="ButtonSave">Сохранить</string>
+    <string name="ButtonCancel">Отмена</string>
+    <string name="ButtonDelete">Удалить</string>
+</resources>

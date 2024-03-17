@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Kurs</string>
+    <string name="btn1_name">Новая задача</string>
+    <string name="btn2_name">Все задачи</string>
+    <string name="EditTextTaskName">Task name</string>
+    <string name="EditTextDescriptionTasks">Description tasks</string>
+    <string name="EditTextTaskStartDate">Start date</string>
+    <string name="EditTextTaskEndDate">End date</string>
+    <string name="EditTextReminderDate">Reminder date</string>
+    <string name="CheckBoxMissionAccomplished">Comlete</string>
+    <string name="ButtonSave">Save</string>
+    <string name="ButtonCancel">Cancel</string>
+    <string name="ButtonDelete">Delete</string>
+</resources>

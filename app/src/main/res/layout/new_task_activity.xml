@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".NewTaskActivity">
+
+
+    <EditText
+        android:id="@+id/editTextHeading"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/EditTextTaskName"
+        android:lines="1" />
+
+    <EditText
+        android:id="@+id/editTextDescription"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/EditTextDescriptionTasks"
+        android:layout_below="@id/editTextHeading"
+        android:inputType="textMultiLine"
+        android:lines="5" />
+
+    <EditText
+        android:id="@+id/editTextStartDate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextDescription"
+        android:hint="@string/EditTextTaskStartDate"
+        android:clickable="true"
+        android:focusable="false"
+        android:onClick="showDatePickerDialog" />
+
+    <EditText
+        android:id="@+id/editTextEndDate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextStartDate"
+        android:hint="@string/EditTextTaskEndDate"
+        android:clickable="true"
+        android:focusable="false"
+        android:onClick="showDatePickerDialog" />
+
+    <EditText
+        android:id="@+id/editTextReminderDate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextEndDate"
+        android:hint="@string/EditTextReminderDate"
+        android:clickable="true"
+        android:focusable="false"
+        android:onClick="showDatePickerDialog" />
+
+    <CheckBox
+        android:id="@+id/checkBoxCompleted"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextReminderDate"
+        android:layout_marginTop="16dp"
+        android:text="@string/CheckBoxMissionAccomplished" />
+
+    <Button
+        android:id="@+id/buttonSaveTask"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/checkBoxCompleted"
+        android:layout_marginTop="16dp"
+        android:text="@string/ButtonSave" />
+
+    <Button
+        android:id="@+id/buttonCancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/buttonSaveTask"
+        android:layout_alignTop="@id/buttonSaveTask"
+        android:layout_marginLeft="30dp"
+        android:text="@string/ButtonCancel" />
+
+</RelativeLayout>

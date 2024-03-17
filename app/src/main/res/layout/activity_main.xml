@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context=".MainActivity">
+
+    <ListView
+        android:id="@+id/listView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/linearLayout"
+        android:padding="16dp" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true">
+
+        <Button
+            android:onClick="onClick_BtnAddTask"
+            android:id="@+id/btnAddTask"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:background="@drawable/baseline_control_point_24"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="16dp" />
+
+
+        <Button
+            android:onClick="onClick_BtnCalendar"
+            android:id="@+id/btnCalendar"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:background = "@drawable/baseline_calendar_month_24"
+            android:layout_above="@id/btnAddTask"
+            android:layout_alignStart="@id/btnAddTask"
+            android:layout_marginBottom="16dp" />
+
+
+
+    </LinearLayout>
+    
+</RelativeLayout>
